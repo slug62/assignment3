@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 3</title>
-    <script>
-        function countChars() {
-            textfield.getPropertyValue()
-        }
-    </script>
+    <script src="a3-js.js"></script>
+    <link rel="stylesheet" type="text/css" href="a3-style.css">
 </head>
 <body>
-    <div id="tfields" style="text-align: center">
-        <input id="addtextfield" type="button" name="add" value="Add New Field" onclick="runscript">
-        <input id="removetextfield" type="button" name="remove" value="Remove Field" onclick="runscript"><br><br>
-        <input id='textfield' type="text" name="first" value="Input Text" onchange="runscript"><br>
+    <div id="myContent">
+        <input id="addtextfield" type="button" name="add" value="Add New Field" onclick="addTextField();">
+        <input id="removetextfield" type="button" name="remove" value="Remove Field" onclick="removeTextField();"><br><br>
+        <div id="tfields">
+            <input id='textfield' type="text" onkeyup="countChars(this.id, output);">
+            <div id="output">0 Length</div>
+        </div>
     </div>
 </body>
 </html>
