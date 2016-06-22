@@ -9,10 +9,11 @@
 <body>
     <div id="myContent">
         <input id="addtextfield" type="button" name="add" value="Add New Field" onclick="addTextField();">
-        <input id="removetextfield" type="button" name="remove" value="Remove Field" onclick="removeTextField();"><br><br>
+        <input id="removetextfield" type="button" name="remove" value="Remove Field" onclick="removeTextField();">
+        <input id="sorttextfield" type="button" name="sort" value="Sort Fields" onclick="sortTextFields();"><br><br>
         <div id="tfields">
-            <input id='textfield' type="text" onkeyup="countChars(this.id, output);">
-            <div id="output">0 Length</div>
+            <input id='textfield' type="text" class="tf" onkeyup="countChars(this.id, output);">
+            <div id="output">0 length</div>
         </div>
     </div>
 </body>
